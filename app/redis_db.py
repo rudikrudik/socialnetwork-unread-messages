@@ -1,4 +1,3 @@
-import json
 import redis
 
 from app.config import settings
@@ -9,7 +8,7 @@ def redis_connect():
                             port=settings.REDIS_DIALOG_PORT,
                             db=settings.REDIS_DIALOG_DB,
                             password=settings.REDIS_DIALOG_PASSWORD,
-                            decode_responses = True
+                            decode_responses=True
                             )
     try:
         r_connect.ping()

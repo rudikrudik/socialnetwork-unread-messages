@@ -1,6 +1,5 @@
 from fastapi import FastAPI
 from app.config import settings
-from app.schema import UserAddCount
 import app.redis_db as redis_db
 
 
