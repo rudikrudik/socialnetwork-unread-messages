@@ -39,6 +39,7 @@ async def read_messages_from_user(from_user: int, to_user: int):
             detail="Unread message not found"
         )
 
+
 @app.post("/get/unredmessages/{id_user}")
 async def get_user_unread_messages(id_user: int):
     try:
