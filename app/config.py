@@ -3,8 +3,8 @@ from pydantic_settings import BaseSettings, SettingsConfigDict
 
 
 class Settings(BaseSettings):
-    PROJECT_NAME: str
-    PROJECT_VERSION: str
+    PROJECT_NAME: str = "UnreadMessages"
+    PROJECT_VERSION: str = "0.1.0"
     REDIS_DIALOG_HOST: str
     REDIS_DIALOG_LOGIN: str
     REDIS_DIALOG_PORT: int
