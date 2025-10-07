@@ -40,7 +40,7 @@ async def read_messages_from_user(from_user: int, to_user: int):
         )
 
 
-@app.post("/get/unredmessages/{id_user}")
+@app.post("/get/unreadmessages/{id_user}")
 async def get_user_unread_messages(id_user: int):
     try:
         result = redis_db.redis_db_get_unread_messages(id_user)
